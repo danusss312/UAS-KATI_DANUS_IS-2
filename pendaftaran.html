@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendaftaran EDUROWS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #222831;
+      color: white;
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    nav {
+      background-color: #393E46;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 30px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ADB5;
+    }
+
+    .form-section {
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+      background-color: white;
+    }
+
+    .form-container {
+      background-color: #eee0f8;
+      padding: 25px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .form-container table {
+      width: 100%;
+    }
+
+    .form-container td {
+      padding: 8px;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      width: 95%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .submit-btn {
+      display: block;
+      background-color: #00ADB5;
+      color: white;
+      padding: 10px 25px;
+      margin: 20px auto 0;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #007f86;
+    }
+
+    .img-side {
+      text-align: center;
+      padding: 15px;
+    }
+
+    .img-side img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: #393E46;
+      color: aliceblue;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
+
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+     .footer-column b {
+      display: block;
+      margin-bottom: 10px;
+      color: #FFD700;
+      font-size: 15px;
+    }
+
+    .footer-column {
+      flex: 1;
+      min-width: 180px;
+      margin: 10px;
+    }
+
+    .footer-column b {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      background-color: #222831;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+     <h1>EDUROWS</h1>
+     <p>ENGLISH MASTERY COURSE WITH EDUROWS</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="pendaftaran.html">Pendaftaran</a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="tentangkami.html">Tentang Kami</a>
+    <a href="kontakkami.html">Kontak Kami</a>
+  </nav>
+
+  <div class="form-section">
+    <div class="img-side">
+      <img src="T1.png" width="250" alt="EDUROWS Image">
+    </div>
+
+    <div class="form-container">
+      <form id="formPendaftaran">
+        <table>
+          <tr>
+            <td>Nama Lengkap</td>
+            <td><input type="text" name="nama" id="nama" required></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              <input type="radio" name="kelamin" value="Pria">Pria
+              <input type="radio" name="kelamin" value="Wanita">Wanita
+            </td>
+          </tr>
+          <tr>
+            <td>Hobi</td>
+            <td>
+              <input type="checkbox" name="hobi" value="Musik">Musik
+              <input type="checkbox" name="hobi" value="Travelling">Travelling
+              <input type="checkbox" name="hobi" value="Membaca Buku">Membaca Buku
+              <input type="checkbox" name="hobi" value="Lainnya">Lainnya
+            </td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td><input type="text" name="alamat" required></td>
+          </tr>
+          <tr>
+            <td>Asal Sekolah</td>
+            <td><input type="text" name="asalsekolah"></td>
+          </tr>
+          <tr>
+            <td>Tempat, Tanggal Lahir</td>
+            <td><input type="text" name="ttl"></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="text" name="email"></td>
+          </tr>
+          <tr>
+            <td>No. Handphone</td>
+            <td><input type="text" name="telepon"></td>
+          </tr>
+          <tr>
+            <td>Alasan Memilih EDUROWS</td>
+            <td><textarea name="alasan" rows="4"></textarea></td>
+          </tr>
+          <tr>
+            <td>Pilih Program</td>
+            <td>
+              <select name="program">
+                <option value="Pemula">Pemula</option>
+                <option value="Menengah">Menengah</option>
+                <option value="Lanjutan">Lanjutan</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" style="text-align: center;"  value="Lanjutkan Pembayaran" class="submit-btn">
+        
+      </form>
+    </div>
+
+    <div class="img-side">
+      <img src="T2.png" width="250" alt="EDUROWS Image">
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-columns">
+      <div class="footer-column">
+        <b>Tentang EDUROWS</b>
+        Kursus<br>Misi<br>Metode Belajar<br>Efektivitas<br>Panduan<br>Evaluasi<br>Karier<br>Brand<br>Toko<br>Pers<br>Investor<br>Kontak
+      </div>
+      <div class="footer-column">
+        <b>Program</b>
+        EDUROWS Online<br>For Schools<br>English Test<br>Podcast<br>For Business<br>Super EDUROWS<br>EDUROWS+<br>EDUROWS Max
+      </div>
+      <div class="footer-column">
+        <b>Aplikasi</b>
+        Android<br>iOS
+      </div>
+      <div class="footer-column">
+        <b>Bantuan & Dukungan</b>
+        T&J Umum<br>T&J Sekolah<br>T&J Test<br>Status Server
+      </div>
+      <div class="footer-column">
+        <b>Privasi & Ketentuan</b>
+        Panduan Komunitas<br>Ketentuan Layanan<br>Kebijakan Privasi<br><br>
+        <b>Media Sosial</b>
+        Blog<br>Instagram<br>TikTok<br>Twitter<br>YouTube
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 English Course. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("formPendaftaran").addEventListener("submit", function(event){
+      event.preventDefault();
+      alert("Terima kasih telah mendaftar di EDUROWS! Anda akan diarahkan ke halaman transaksi dan kami akan segera menghubungi Anda :)");
+      window.location.href = "transaksi.html";
+      this.reset(); // membersihkan form
+    });
+  </script>
+
+</body>
+</html>
